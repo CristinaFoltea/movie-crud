@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Cristina's Movie Ratings</h1>
+    <h2>A different prospective on modern movies</h2>
+  </header>
+  <main class='edit'>
+    <h1>{{title}}</h1>
+    <img src='{{poster}}' alt='movie poster'>
+    <section class="edit">
+      <form action='/movies/{{_id}}/update' method = 'POST'>
+        <p>
+          <label for='title'>Title</label>
+          <input type='text' name ='title' value ='{{title}}'>
+        </p>
+        <p>
+          <label for='director'>Director</label>
+          <input type='text' name ='director' value='{{director}}'>
+        </p>
+        <p>
+          <label for='year'>Year</label>
+          <input type='text' name ='year' value='{{year}}'>
+        </p>
+        <p>
+          <label for='rating'>My Rating</label>
+          <input type='text' name ='rating' value='{{rating}}'>
+        </p>
+        <p>
+          <label for='poster'>Poster URL</label>
+          <input type='text' name ='poster' value='{{poster}}'>
+        </p>
+        <input type='submit' value = 'Update'>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

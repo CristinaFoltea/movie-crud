@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Cristina's Movie Ratings</h1>
+    <h2>A different prospective on modern movies</h2>
+  </header>
+  <main>
+    <aside>
+      <form action='/movies/new'>
+        <input type='submit' value ='New Movie'>
+      </form>
+    </aside>
+    <section>
+      <h1>All Movies</h1>
+      <article class='title-article'>
+        <h2>
+          <span class="title">Title</span>
+          <span class= "director">Director</span>
+          <span class="year">Year</span>
+          <span class="rating">Rating</span>
+        </h2>
+      </article>
+      {{#movie}}
+        <article>
+            <a href='/movies/{{_id}}'> <span class ="title">{{title}}</span></a><span class= "director">{{director}}</span> <span class= "year">{{year}}</span> <span class = "rating">{{rating}}</span>
+          <form action='/movies/{{_id}}/delete'>
+            <label for='delete'></label>
+            <input type='submit' name = 'delete' value = 'Delete Movie'>
+          </form>
+          <form action='/movies/{{_id}}/edit'>
+            <label for='edit'></label>
+            <input type='submit' name = 'edit' value = 'Edit'>
+          </form>
+        </article>
+      {{/movie}}
+    </section>
+  </main>
+</body>
+</html>

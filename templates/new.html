@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Cristina's Movie Ratings</h1>
+    <h2>A different prospective on modern movies</h2>
+  </header>
+  <main>
+    <h1>Add A Movie</h1>
+    <section class="new">
+      <form action='/movies' method = 'POST'>
+        <p>
+          <label for='title'>Title</label>
+          <input type='text' name ='title'>
+        </p>
+        <p>
+          <label for='director'>Director</label>
+          <input type='text' name ='director'>
+        </p>
+        <p>
+          <label for='year'>Year</label>
+          <input type='text' name ='year'>
+        </p>
+        <p>
+          <label for='rating'>My Rating</label>
+          <select name="rating" value = 1>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </p>
+        <p>
+          <label for='poster'>Poster URL</label>
+          <input type='text' name ='poster'>
+        </p>  
+        <input type='submit' value = 'Add Movie'>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
