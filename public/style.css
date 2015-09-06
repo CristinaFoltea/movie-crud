@@ -64,8 +64,9 @@ article {
   padding: 10px 0;
 }
 
-article.title-article {
+table.title-article {
   border-top: 0;
+  width: 100%;
 }
 
 a {
@@ -123,9 +124,9 @@ input[type=text] {
   display: inline-block;
   margin-left: 100px;
 }
-.title, .director, .year, .rating {
+td {
   display: inline-block;
   text-align: center;
-  width: 170px;
+  width: 10%;
   margin: 0 10px;
 }
