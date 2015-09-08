@@ -64,7 +64,7 @@ article {
   padding: 10px 0;
 }
 
-table.title-article {
+.title-article {
   border-top: 0;
   width: 100%;
 }
@@ -124,9 +124,10 @@ input[type=text] {
   display: inline-block;
   margin-left: 100px;
 }
-td {
+
+span {
   display: inline-block;
   text-align: center;
-  width: 10%;
+  width: 15%;
   margin: 0 10px;
 }

@@ -18,37 +18,38 @@
     </aside>
     <section>
       <h1>All Movies</h1>
-      <table class='title-article'>
-        <tr>
-          <td class="title"><h2>Title</h2></td>
-          <td class= "director"><h2>Director</h2></td>
-          <td class="year"><h2>Year</h2></td>
-          <td class="rating"><h2>Rating</h2></td>
-          <td></td>
-          <td></td>
-        </tr>
+      <article class='title-article'>
+        <h2>
+          <span class="title">Title</span>
+          <span class= "director">Director</span>
+          <span class="year">Year</span>
+          <span class="rating">Rating</span>
+          <span></span>
+          <span></span>
+        </h2>
       {{#movie}}
-        <tr>
-          <td><a href='/movies/{{_id}}'></td>
-          <td class ="title">{{title}}</td>
-          <td class= "director"></a>{{director}}</td>
-          <td class= "year">{{year}}</td>
-          <td class = "rating">{{rating}}</td>
-          <td>
+        <p>
+        <a href='/movies/{{_id}}' class='title'>
+          <span>{{title}}</span>
+        </a>
+          <span class= "director">{{director}}</span>
+          <span class= "year">{{year}}</span>
+          <span class = "rating">{{rating}}</span>
+          <span>
             <form action='/movies/{{_id}}/delete'>
               <label for='delete'></label>
               <input type='submit' name = 'delete' value = 'Delete Movie'>
             </form>
-          </td>
-          <td>
+          </span>
+          <span>
             <form action='/movies/{{_id}}/edit'>
               <label for='edit'></label>
               <input type='submit' name = 'edit' value = 'Edit'>
             </form>
-          </td>
-        </tr>
+          </span>
+        </p>
         {{/movie}}
-      </table>
+      </article>
     </section>
   </main>
 </body>
