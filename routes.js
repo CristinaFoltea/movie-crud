@@ -1,6 +1,6 @@
 var routes = require('i40')(),
     fs = require('fs'),
-    db = require('monk')('localhost/movies'),
+    db = require('monk')(process.env.MONGOLAB_URI),
     movie = db.get('movie'),
     view = require('./view'),
     url = require('url'),
