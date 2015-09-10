@@ -24,30 +24,28 @@
           <span class= "director">Director</span>
           <span class="year">Year</span>
           <span class="rating">Rating</span>
-          <span></span>
-          <span></span>
         </h2>
       {{#movie}}
-        <p>
+        <div class="line">
         <a href='/movies/{{_id}}' class='title'>
           <span>{{title}}</span>
         </a>
-          <span class= "director">{{director}}</span>
-          <span class= "year">{{year}}</span>
-          <span class = "rating">{{rating}}</span>
+          <span class="director">{{director}}</span>
+          <span class="year">{{year}}</span>
+          <span class ="rating">{{rating}}</span>
           <span>
-            <form action='/movies/{{_id}}/delete'>
+            <form action='/movies/{{_id}}/delete' class="button">
               <label for='delete'></label>
-              <input type='submit' name = 'delete' value = 'Delete Movie'>
+              <input type='submit' name ='delete' value ='Delete Movie'>
             </form>
           </span>
           <span>
-            <form action='/movies/{{_id}}/edit'>
+            <form action='/movies/{{_id}}/edit' class="button">
               <label for='edit'></label>
-              <input type='submit' name = 'edit' value = 'Edit'>
+              <input type='submit' name ='edit' value ='Edit'>
             </form>
           </span>
-        </p>
+        </div>
         {{/movie}}
       </article>
     </section>

@@ -6,6 +6,15 @@
 
 body {
   background: #E6E6E6;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1rem;
 }
 
 body.home {
@@ -43,7 +52,7 @@ section.show h1, main.edit h1 {
 
 section.new {
   font-weight: bold;
-  font-size: 1.05em;
+  font-size: 1.05rem;
 }
 
 section {
@@ -51,7 +60,7 @@ section {
 }
 
 section h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 aside {
@@ -72,15 +81,15 @@ article {
 a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #696863;
 }
 
 a.home-link {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 1vw;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #696863;
   z-index: 10;
@@ -101,13 +110,13 @@ input[type=submit] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 40px;
+  height: 35px;
   color: white;
   font: bold 15px/150% Helvetica, sans-serif;
   padding: 0 20px;
   background: #788E88;
   border-radius: 5px 5px;
-  margin: 0 20px;
+  margin: 0 2vw;
 }
 
 input[type=text] {
@@ -128,6 +137,9 @@ input[type=text] {
 span {
   display: inline-block;
   text-align: center;
-  width: 15%;
-  margin: 0 10px;
+  width: 10vw;
+  margin: 0 1vw;
+}
+div {
+  height: 8vh;
 }
